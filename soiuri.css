@@ -1,0 +1,76 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url('fundal4.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.icon {
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    background-color: brown;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: crimson;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu .dropdown {
+    background-color: brown;
+    color: crimson;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: brown;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px crimson;
+}
+
+.menu li:hover .dropdown-content {
+    display: block;
+    /* Afișează meniul drop-down când cursorul este deasupra unui li */
+}
+
+.logo {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.content {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-style: normal;
+}

@@ -1,0 +1,23 @@
+[{
+        "id": 1,
+        "name": "DULCEATA",
+        "price": 7,
+        "image": "poze/dulceata.png"
+
+    },
+
+    {
+        "id": 2,
+        "name": "INGHETATA",
+        "price": 5,
+        "image": "poze/inghetata.png"
+
+    },
+
+    {
+        "id": 3,
+        "name": "ZMEURATA",
+        "price": 4,
+        "image": "poze/zmeurata.png"
+    }
+]

@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.icon {
+    text-align: center;
+    margin-top: -21px;
+    position: relative;
+    background-color: brown;
+}
+
+.icon h2 {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.icon img {
+    position: absolute;
+    margin-top: 25px;
+    height: auto;
+    opacity: 0.8;
+}
+
+#logofane {
+    width: 50px;
+    height: 35px;
+    /*transition: width 2s, height 4s;*/
+    z-index: 1002;
+    animation: rotate 5s linear infinite
+}
+
+
+/*#logofane:hover {
+    width: 100px;
+    height: 100px;
+}
+*/
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.menu {
+    position: relative;
+    z-index: 1001;
+    margin-top: -21px;
+}
+
+.menu ul {
+    list-style-type: none;
+    background-color: brown;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.menu a:hover {
+    background-color: crimson;
+}
+
+.menu li {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu .dropdown {
+    background-color: brown;
+    color: crimson;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: brown;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px crimson;
+}
+
+.menu li:hover .dropdown-content {
+    display: block;
+}
+
+.logo {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    color: black;
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    background-color: rgb(239, 235, 231, 0.4);
+    font-size: 25px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 35vw;
+    object-fit: cover;
+}
+
+.galerie {
+    margin: 5px;
+    float: left;
+    width: calc(33.33% - 10px);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.produse {
+    width: 100%;
+    height: auto;
+}
+
+.galerie .desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.galerie:hover {
+    color: brown;
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .menu li {
+        float: none;
+        display: block;
+        margin: 0;
+    }
+    .dropdown-content {
+        position: static;
+        display: none;
+    }
+    .menu li:hover .dropdown-content {
+        display: block;
+    }
+    .galerie {
+        width: calc(50% - 10px);
+    }
+    .hero-image img {
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .galerie {
+        width: 100%;
+    }
+    .hero-image img {
+        height: 70vw;
+    }
+    .content h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+}
+
+.contact-bar {
+    background-color: brown;
+    display: flex;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    bottom: 0px;
+    margin-top: 20px;
+}
+
+.social-media {
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+.social-media a {
+    color: white;
+    font-size: 24px;
+    margin: 50px;
+}
+
+.social-media a:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+#glenample {
+    height: 40vh;
+}
